@@ -2,6 +2,8 @@
     <head>
     </head>
     <body>
+    {% for city_weather in weather_data %}
     <p>The Current Weather for {{ city_weather.city }} is {{ city_weather.temperature }} <span>&#176;</span> F {{city_weather.description}}</p>
+    {% endfor %}
     </body>
 </html>
